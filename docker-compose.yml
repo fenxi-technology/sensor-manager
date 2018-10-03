@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+    de-kit-sensor-manager:
+        build: ./
+        image: de-kit-sensor-manager:1.0
+        ports:
+            - 8081:8081
+        restart: always
