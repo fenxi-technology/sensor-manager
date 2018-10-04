@@ -5,7 +5,8 @@ html
     title= title
     <script src="/js/plotly-latest.min.js"></script>
     <script src="/js/mycharts.js"></script>
-  body(onload="initTemp('"+ sensor +"')")
+    link(rel='stylesheet', href='/css/style.css')
+  body(onload="init('"+ sensor +"')")
     h1= message
     <div id=#{sensor} style="width:90%;height:250px;"></div>
     div#graph

@@ -11,7 +11,7 @@ function initTemp(htmlElement){
         data], { 
         margin: { t: 0 } } );
 
-    console.log( Plotly.BUILD );
+    // console.log( Plotly.BUILD );
 }
 
 
