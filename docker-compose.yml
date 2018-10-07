@@ -13,3 +13,8 @@ services:
             - LETSENCRYPT_EMAIL=frostyandy2k@yahoo.com # example webmaster@agentur-murr.de
         networks:
             - nginx-proxy
+
+networks:
+   nginx-proxy:
+      external: true
+            
