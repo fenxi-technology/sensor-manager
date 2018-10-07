@@ -1,14 +1,5 @@
 //- https://pugjs.org/language/attributes.html
+extends sensor-template.pug
 
-html
-  head
-    title= title
-    <script src="/js/plotly-latest.min.js"></script>
-    <script src="/js/mycharts.js"></script>
-    link(rel='stylesheet', href='/css/style.css')
-  body(onload="initTemp('"+ sensor +"')")
-    h1= message
-    <div id=#{sensor} style="width:90%;height:250px;"></div>
-    div#graph
-    div(style="text-align: center")
-        img(src=`/images/${sensor}.png`, style="width:20%")
+block content
+  div#graph

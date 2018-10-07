@@ -1,0 +1,15 @@
+extends sensor-template.pug
+
+block content
+    div#dust
+        h2 Particle Concentration is #[span#particale_status.red 10 Percent - Warning]
+        div#pie1
+        img(src="/images/sb30.png")
+    div#safety_area
+        h2 Area is #[span#area_status.green SAFE]
+        div#sensor_with_aoe
+            img(src="/images/sensor_with_aoe.png")
+    div#safety_barrier
+        h2 Safety Barrier #[span#barrier_status.green ONLINE]
+        div#sensor
+            img(src="/images/c4000advanced.png")

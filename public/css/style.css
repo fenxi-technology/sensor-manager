@@ -1,3 +1,44 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(/fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Jura;
+    src: url(/fonts/Jura/Jura-Regular.ttf);
+}
+
+
 body{
     background: white;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Jura', sans-serif;
+}
+
+#header{
+    display: flex;
+    flex-flow: row;
+}
+
+#header img{
+    width: 5%;
+    height: 5%;
+}
+
+.green{
+    color: #00B050;
+}
+
+.red{
+    color: rgb(190, 3, 18);
+}
+
+.with_center_text{
+    text-align: center;
+}
+
+#pie1{
+    margin: 0 auto;
+    width: 80%;
 }
