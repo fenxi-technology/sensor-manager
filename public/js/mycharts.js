@@ -92,10 +92,12 @@ function initTemp(){
       };
     var data = [trace];
     Plotly.newPlot('graph', data);
+    var prepData= () => {var d=getData(); while(d<0.5) d=getData(); return d;}
+
     setInterval(function() {
         // x.push(getData())
       // Plotly.redraw('graph')
-      Plotly.extendTraces('graph', { y: [[getData()]] }, [0])
+      Plotly.extendTraces('graph', { y: [[prepData()]] }, [0])
     }, 400);
 
 }
